@@ -1,0 +1,94 @@
+:root {
+  --primary-color: #2B465E;
+  --secondary-color: #FED23C;
+  --primary-light-color: #A3B4BB;
+  --gray-color: #D4D9DE;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f2f2f2;
+  font-family: arial,sans-serif;
+}
+.center {
+  margin: 0 auto;
+  padding: 60px 40px;
+  text-align: center;
+  width: 60vw;
+}
+
+header {
+  background-color: var(--primary-color);
+  min-height: 56px;
+  width: 100vw;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+header nav a {
+  background-color: rgba(0,0,0,.5);
+  color: var(--secondary-color);
+  border-color: black;
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+  transition: 0.6s all;
+}
+
+header nav a:hover {
+  background-color: rgba(0,0,0,.8);
+}
+
+section {
+  background-color: #ffffff;
+  height: 100vh;
+  padding-top: 56px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,0.16);
+  border: 1px solid #eee;
+  margin: 16px 0;
+  min-width: 360px;
+}
+
+.headBox {
+  font-size: 26px;
+  margin-bottom: 6px;
+}
+
+footer {
+  color: #BBB;
+  text-align: center;
+  font-weight: bold;
+  font-family: 24px;
+  margin-top: -40px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .center {
+    width: 80vw;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .center {
+    margin: 0;
+    width: 100vw;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .center {
+    margin: 0;
+    width: 100vw;
+    padding: 60px 0px;
+  }
+}
